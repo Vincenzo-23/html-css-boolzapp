@@ -214,8 +214,35 @@ ol {
 
     .notifications,
     .search-bar{
-        display: block;
+        display: flex;
+        padding: 10px;
+        align-items: center;
     }
+
+    .notifications{
+        background-color: #A6D7F9;
+       
+    }
+
+    .notifications-icon{
+        color: #A6D7F9;
+        background-color: white;
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin-right: 10px;
+    }
+
+
+    .notifications-subtitle,
+    .notifications-link{
+        font-size: 12px;
+    }
+
 
 
 
@@ -225,7 +252,7 @@ ol {
     .chat-profile-picture{
         margin: 0;
     }
-    
+
 
     .other-person-info, 
     .chat-time{
