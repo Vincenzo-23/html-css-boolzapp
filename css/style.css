@@ -47,7 +47,7 @@ ol {
 
 
 
-    /* Desktop version */
+    /* Desktop version layout */
 
 @media (min-width:1200px){
 
@@ -81,6 +81,7 @@ ol {
 
 .sidebar{
     display: none;
+    background-color: #eaeaea;
 }
 
 
@@ -101,6 +102,7 @@ ol {
         flex-wrap: nowrap;
     }
 
+   
 
    .col-md-shrink{
         display: flex;
@@ -113,12 +115,17 @@ ol {
         flex-grow: 1;
    }
 
+
+        /* Sidebar header with our personal info */
+
+
    .personal-info{
-        padding: 20px;
+        padding: 10px;
    }
 
-   .profile-picture{
-        width: 50px;
+   .profile-picture, 
+   .chat-profile-picture{
+        width: 40px;
         border-radius: 50%;
         margin: 0 auto;
    }
@@ -127,6 +134,39 @@ ol {
         display: none;
 }
 
+
+        /* Sidebar notifications and search bar */
+
+
+    .notifications,
+    .search-bar{
+        display: none;
+    }
+
+
+        /* Sidebar with all the chat info */
+
+
+    .chat-info{
+        background-color: white;
+        flex-grow: 1;
+    }
+
+    .chat-info-specifications{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .other-person-info, 
+    .chat-time{
+        display: none;
+    }
+
+
+    .chat-info-specifications:not(.chat-info-specifications:last-child){
+        border-bottom: 0.5px solid #eaeaea;
+    }
 
 
 }
@@ -148,16 +188,17 @@ ol {
    }
    
 
+
+        /* Sidebar header with our personal info */
+
+
    .personal-info{
         display: flex;
         align-items: center;
-        background-color: #eaeaea;
+        
     }
 
     .profile-picture{
-        width: 50px;
-        border-radius: 50%;
-        margin-right: auto;
         margin-left: 0;
     }
 
@@ -166,6 +207,56 @@ ol {
         gap: 20px;
         color: #b1b1b1;
     }
+
+
+        /* Sidebar notifications and search bar */
+
+
+    .notifications,
+    .search-bar{
+        display: block;
+    }
+
+
+
+        /* Sidebar with all the chat info  */
+
+
+    .chat-profile-picture{
+        margin: 0;
+    }
+    
+
+    .other-person-info, 
+    .chat-time{
+        display: block;
+    }
+
+    .other-person-info{
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+
+    .chat-name{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .chat-preview{
+        font-size: 10px;
+
+    }
+
+    .chat-time{
+        font-size: 10px;
+    }
+
+    
+
+
+
+
+    
             
 }    
 
@@ -186,13 +277,9 @@ ol {
 }
 
 .debug #app .container-lg div[class^="col"]{
-    background-color: aqua;
+    
     /* padding: 20px; */
     border: 1px solid black;
 }
 
 
-.sidebar > * {
-    
-    border: 1px solid green;
-}
