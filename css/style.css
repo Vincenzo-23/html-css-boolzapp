@@ -88,7 +88,9 @@ ol {
     width: calc(12 * 100% /12);
 }
 
-
+.personal-info{
+    background-color: #eaeaea;
+}
 
 
     /* tablet version */
@@ -111,6 +113,21 @@ ol {
         flex-grow: 1;
    }
 
+   .personal-info{
+        padding: 20px;
+   }
+
+   .profile-picture{
+        width: 50px;
+        border-radius: 50%;
+        margin: 0 auto;
+   }
+
+   .personal-icons{
+        display: none;
+}
+
+
 
 }
 
@@ -130,6 +147,25 @@ ol {
         flex-grow: 1;
    }
    
+
+   .personal-info{
+        display: flex;
+        align-items: center;
+        background-color: #eaeaea;
+    }
+
+    .profile-picture{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .personal-icons{
+        display: flex;
+        gap: 20px;
+        color: #b1b1b1;
+    }
             
 }    
 
@@ -151,13 +187,12 @@ ol {
 
 .debug #app .container-lg div[class^="col"]{
     background-color: aqua;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid black;
 }
 
 
 .sidebar > * {
-    background-color: red;
-    padding: 5px;
+    
     border: 1px solid green;
 }
