@@ -95,23 +95,26 @@ ol {
 
 @media (min-width:768px){
 
-    .row{
+    .row.row-app{
         flex-wrap: nowrap;
     }
 
-    .sidebar{
-        display: flex;
-    }
 
    .col-md-shrink{
+        display: flex;
         width: 100px;
         flex-shrink: 0;
+        flex-direction: column;
    }
 
     .col-md-grow{
         flex-grow: 1;
    }
+
+
 }
+
+
 
 
     /* desktop version */
@@ -150,4 +153,11 @@ ol {
     background-color: aqua;
     padding: 20px;
     border: 1px solid black;
+}
+
+
+.sidebar > * {
+    background-color: red;
+    padding: 5px;
+    border: 1px solid green;
 }
