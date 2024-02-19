@@ -104,7 +104,7 @@ ol {
     }
 
    .col-md-shrink{
-        width: 70px;
+        width: 100px;
         flex-shrink: 0;
    }
 
