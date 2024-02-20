@@ -128,6 +128,36 @@ ol {
 
 
 
+                /* Main app bar */
+
+
+
+
+
+
+                /* Footer app bar */
+
+.emoji-icon,
+.recording-icon{
+    display: none;
+}
+
+.type-chat{
+    display: flex;
+    background-color: #F2EEEB;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.chat-box{
+    flex-grow: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
 
     /* tablet version */
 
@@ -226,6 +256,35 @@ ol {
 .person-contact-info{
     margin-right: auto;
 }
+
+
+
+                /* Main app bar */
+
+
+
+
+
+
+
+                /* Footer app bar */
+
+.emoji-icon,
+.recording-icon{
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+}                
+
+
+.type-chat{
+    padding: 10px 0;
+}
+
+
+
+
+
 
 
 
