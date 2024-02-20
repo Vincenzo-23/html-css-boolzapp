@@ -271,6 +271,7 @@ body{
     .chat-info{
         background-color: white;
         flex-grow: 1;
+        overflow: auto;
     }
 
     .chat-info-specifications{
