@@ -140,6 +140,8 @@ body{
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-content{
@@ -160,14 +162,14 @@ body{
 
 .chat-content-green{
     background-color: #DEF8C0;
-    margin-left: 15%;
-    margin-right: auto;
+    align-self: flex-end;
+    margin-right: 20px;
 }
 
 .chat-content-white{
     background-color: white;
-    margin-right: 15%;
-    margin-left: auto;
+    align-self: flex-start;
+    margin-left: 20px;
     
 }
 
