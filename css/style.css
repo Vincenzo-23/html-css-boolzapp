@@ -50,7 +50,7 @@ body{
 
 
 
-    /* Desktop version layout */
+/* Desktop version layout */
 
 @media (min-width:1200px){
 
@@ -72,10 +72,11 @@ body{
 
 #app{
     background: rgb(77,146,136);
-    background: linear-gradient(180deg, rgba(77,146,136,1) 150px,
-                                        rgba(220,219,210,1) 150px,
-                                        rgba(216,219,216,1) 72%,
-                                        rgba(213,219,219,1) 100%);
+    background: linear-gradient(180deg,
+    rgba(77,146,136,1) 150px,
+    rgba(220,219,210,1) 150px,
+    rgba(216,219,216,1) 72%,
+    rgba(213,219,219,1) 100%);
 }
 
 
@@ -108,7 +109,7 @@ body{
 /* APP BAR */
 
 
-                /* Header app bar */
+/* Header app bar */
 
 .contact-info{
     display: flex;
@@ -133,7 +134,7 @@ body{
 
 
 
-                /* Main app bar */
+/* Main app bar */
 
 .main-chat{
     background-image: url(../img/mine.jpg);
@@ -142,7 +143,7 @@ body{
 }
 
 .chat-content{
-    width: 80%;
+    max-width: 80%;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -186,7 +187,7 @@ body{
 
 
 
-                /* Footer app bar */
+/* Footer app bar */
 
 .emoji-icon,
 .recording-icon{
@@ -211,8 +212,7 @@ body{
 
 
 
-
-    /* tablet version */
+/* TABLET VERSION */
 
 @media (min-width:768px){
 
@@ -228,36 +228,36 @@ body{
         flex-shrink: 0;
         flex-direction: column;
         border-right: 1px solid #cecdcd;
-   }
+    }
 
     .col-md-grow{
         flex-grow: 1;
-   }
+    }
 
 
 
    /* SIDEBAR */
 
-                /* Sidebar header with our personal info */
 
+   /* Sidebar header with our personal info */
 
    .personal-info{
         padding: 10px;
-   }
+    }
 
    .profile-picture, 
    .chat-profile-picture{
         width: 40px;
         border-radius: 50%;
         margin: 0 auto;
-   }
+    }
 
    .personal-icons{
         display: none;
-}
+    }
 
 
-                /* Sidebar notifications and search bar */
+/* Sidebar notifications and search bar */
 
 
     .notifications,
@@ -266,7 +266,7 @@ body{
     }
 
 
-                /* Sidebar with all the chat info */
+/* Sidebar with all the chat info */
 
 
     .chat-info{
@@ -296,50 +296,39 @@ body{
 /* APP BAR */
 
 
-                /* Header app bar */
+/* Header app bar */
+
+    .contact-info-icons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #b1b1b1;
+        
+    }
+
+    .contact-info-icons .search-icon{
+        margin: 0;
+    }
 
 
-.contact-info-icons{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #b1b1b1;
-    
-}
-
-.person-contact-info{
-    margin-right: auto;
-}
+    .person-contact-info{
+        margin-right: auto;
+    }
 
 
+/* Footer app bar */
 
-                /* Main app bar */
-
-
-
-
-
-
-
-                /* Footer app bar */
-
-.emoji-icon,
-.recording-icon{
-    display: block;
-    font-size: 20px;
-    padding: 20px;
-}                
+    .emoji-icon,
+    .recording-icon{
+        display: block;
+        font-size: 20px;
+        padding: 20px;
+    }                
 
 
-.type-chat{
-    padding: 10px 0;
-}
-
-
-
-
-
-
+    .type-chat{
+        padding: 10px 0;
+    }
 
 
 
@@ -347,12 +336,7 @@ body{
 
 
 
-
-
-
-
-
-    /* desktop version */
+/* DESKTOP VERISON */
 
 @media (min-width:1200px){
 
@@ -369,7 +353,7 @@ body{
 
 /* SIDEBAR */
 
-                /* Sidebar header with our personal info */
+/* Sidebar header with our personal info */
 
 
    .personal-info{
@@ -389,11 +373,10 @@ body{
     }
 
 
-                /* Sidebar notifications and search bar */
+/* Sidebar notifications and search bar */
 
 
-    .notifications,
-    .search-bar{
+    .notifications{
         display: flex;
         padding: 10px;
         align-items: center;
@@ -405,15 +388,28 @@ body{
     }
 
     .search-bar{
-        margin: 5px;
+        display: block;
+        position: relative;
+    }
+
+    .bar{
+        width: 100%;
         background-color: white;
+        padding: 10px;
+        padding-left: 40px;
+        
     }
 
 
-    .search-icon{
-        margin-right: 10px;
+    .side-search-icon{
         color: #b1b1b1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        pointer-events: none;
     }
+
 
 
     .notifications-icon{
@@ -438,7 +434,7 @@ body{
 
 
 
-                /* Sidebar with all the chat info  */
+/* Sidebar with all the chat info  */
 
 
     .chat-profile-picture{
@@ -475,28 +471,4 @@ body{
     }
     
             
-}    
-
-
-
-
-
-
-
-
-
-
-/* DEBUG */
-
-
-.debug .container-lg{
-    background-color: white;
 }
-
-.debug #app .container-lg div[class^="col"]{
-    
-    /* padding: 20px; */
-    /* border: 1px solid black; */
-}
-
-
